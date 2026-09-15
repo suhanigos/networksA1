@@ -1,0 +1,42 @@
+[schedule]
+world = "part2-dumb-006"
+seed = 3
+recovery_budget_ms = 1000
+duration_ms = 25253
+generator = 2
+
+[[failure]]
+link = [0, 3]
+down_ms = 1684
+up_ms = 3936
+blast_radius = 6
+
+[[failure]]
+link = [0, 12]
+down_ms = 5605
+up_ms = 7261
+blast_radius = 13
+
+[[failure]]
+link = [2, 11]
+down_ms = 9607
+up_ms = 11245
+blast_radius = 13
+
+[[failure]]
+link = [6, 9]
+down_ms = 12906
+up_ms = 15328
+blast_radius = 8
+
+[[failure]]
+link = [7, 9]
+down_ms = 16957
+up_ms = 19384
+blast_radius = 14
+
+[[failure]]
+link = [5, 6]
+down_ms = 20934
+up_ms = 23378
+blast_radius = 8

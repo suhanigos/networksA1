@@ -1,0 +1,110 @@
+[world]
+name = "part2-ring-002"
+seed = 2
+version = 1
+family = "ring_chords"
+diameter = 2
+generator = 2
+
+[params]
+link_capacity_mbps = 1000
+link_latency_us = 100
+queue_capacity_bytes = 65536
+warmup_ms = 200
+duration_ms = 60000
+delivery_floor_pct = 98.0
+
+[[switch]]
+id = 0
+as_id = 0
+
+[[switch]]
+id = 1
+as_id = 0
+
+[[switch]]
+id = 2
+as_id = 0
+
+[[switch]]
+id = 3
+as_id = 0
+
+[[switch]]
+id = 4
+as_id = 0
+
+[[switch]]
+id = 5
+as_id = 0
+
+[[link]]
+a = 5
+b = 3
+
+[[link]]
+a = 3
+b = 1
+
+[[link]]
+a = 3
+b = 2
+
+[[link]]
+a = 0
+b = 5
+
+[[link]]
+a = 4
+b = 2
+
+[[link]]
+a = 2
+b = 1
+
+[[link]]
+a = 4
+b = 0
+
+[[link]]
+a = 1
+b = 4
+
+[[link]]
+a = 5
+b = 4
+
+[[app]]
+id = 100
+switch = 0
+prefix = "10.0.108.0/24"
+
+[[app]]
+id = 101
+switch = 1
+prefix = "10.0.186.0/24"
+
+[[app]]
+id = 102
+switch = 2
+prefix = "10.0.210.0/24"
+
+[[app]]
+id = 103
+switch = 3
+prefix = "10.0.226.0/24"
+
+[[app]]
+id = 104
+switch = 4
+prefix = "10.0.221.0/24"
+
+[[app]]
+id = 105
+switch = 5
+prefix = "10.0.99.0/24"
+
+[workload]
+kind = "all_pairs_cbr"
+interval_ms = 10
+size_bytes = 100

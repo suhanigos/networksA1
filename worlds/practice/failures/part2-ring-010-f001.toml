@@ -1,0 +1,42 @@
+[schedule]
+world = "part2-ring-010"
+seed = 1
+recovery_budget_ms = 1000
+duration_ms = 24783
+generator = 2
+
+[[failure]]
+link = [2, 14]
+down_ms = 1789
+up_ms = 3573
+blast_radius = 6
+
+[[failure]]
+link = [9, 11]
+down_ms = 5825
+up_ms = 7606
+blast_radius = 15
+
+[[failure]]
+link = [9, 10]
+down_ms = 9666
+up_ms = 11917
+blast_radius = 13
+
+[[failure]]
+link = [4, 12]
+down_ms = 13749
+up_ms = 15709
+blast_radius = 1
+
+[[failure]]
+link = [4, 8]
+down_ms = 17490
+up_ms = 19051
+blast_radius = 5
+
+[[failure]]
+link = [0, 5]
+down_ms = 20595
+up_ms = 22678
+blast_radius = 17

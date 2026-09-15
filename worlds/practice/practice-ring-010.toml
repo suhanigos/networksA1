@@ -1,0 +1,227 @@
+[world]
+name = "practice-ring-010"
+seed = 10
+version = 1
+family = "ring_chords"
+diameter = 6
+generator = 2
+
+[params]
+link_capacity_mbps = 1000
+link_latency_us = 100
+queue_capacity_bytes = 65536
+warmup_ms = 200
+duration_ms = 10000
+delivery_floor_pct = 99.9
+
+[[switch]]
+id = 0
+as_id = 0
+
+[[switch]]
+id = 1
+as_id = 0
+
+[[switch]]
+id = 2
+as_id = 0
+
+[[switch]]
+id = 3
+as_id = 0
+
+[[switch]]
+id = 4
+as_id = 0
+
+[[switch]]
+id = 5
+as_id = 0
+
+[[switch]]
+id = 6
+as_id = 0
+
+[[switch]]
+id = 7
+as_id = 0
+
+[[switch]]
+id = 8
+as_id = 0
+
+[[switch]]
+id = 9
+as_id = 0
+
+[[switch]]
+id = 10
+as_id = 0
+
+[[switch]]
+id = 11
+as_id = 0
+
+[[switch]]
+id = 12
+as_id = 0
+
+[[switch]]
+id = 13
+as_id = 0
+
+[[switch]]
+id = 14
+as_id = 0
+
+[[link]]
+a = 13
+b = 0
+
+[[link]]
+a = 0
+b = 5
+
+[[link]]
+a = 7
+b = 3
+
+[[link]]
+a = 11
+b = 9
+
+[[link]]
+a = 3
+b = 13
+
+[[link]]
+a = 5
+b = 6
+
+[[link]]
+a = 14
+b = 2
+
+[[link]]
+a = 4
+b = 8
+
+[[link]]
+a = 2
+b = 10
+
+[[link]]
+a = 8
+b = 7
+
+[[link]]
+a = 12
+b = 4
+
+[[link]]
+a = 9
+b = 1
+
+[[link]]
+a = 6
+b = 14
+
+[[link]]
+a = 1
+b = 12
+
+[[link]]
+a = 11
+b = 6
+
+[[link]]
+a = 10
+b = 9
+
+[[link]]
+a = 1
+b = 8
+
+[[link]]
+a = 10
+b = 11
+
+[[app]]
+id = 100
+switch = 0
+prefix = "10.0.143.0/24"
+
+[[app]]
+id = 101
+switch = 1
+prefix = "10.0.96.0/24"
+
+[[app]]
+id = 102
+switch = 2
+prefix = "10.0.59.0/24"
+
+[[app]]
+id = 103
+switch = 3
+prefix = "10.0.190.0/24"
+
+[[app]]
+id = 104
+switch = 4
+prefix = "10.0.82.0/24"
+
+[[app]]
+id = 105
+switch = 5
+prefix = "10.0.154.0/24"
+
+[[app]]
+id = 106
+switch = 6
+prefix = "10.0.75.0/24"
+
+[[app]]
+id = 107
+switch = 7
+prefix = "10.0.41.0/24"
+
+[[app]]
+id = 108
+switch = 8
+prefix = "10.0.6.0/24"
+
+[[app]]
+id = 109
+switch = 9
+prefix = "10.0.34.0/24"
+
+[[app]]
+id = 110
+switch = 10
+prefix = "10.0.127.0/24"
+
+[[app]]
+id = 111
+switch = 11
+prefix = "10.0.70.0/24"
+
+[[app]]
+id = 112
+switch = 12
+prefix = "10.0.176.0/24"
+
+[[app]]
+id = 113
+switch = 13
+prefix = "10.0.199.0/24"
+
+[[app]]
+id = 114
+switch = 14
+prefix = "10.0.170.0/24"
+
+[workload]
+kind = "all_pairs_cbr"
+interval_ms = 10
+size_bytes = 100

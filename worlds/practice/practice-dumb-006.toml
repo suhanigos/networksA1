@@ -1,0 +1,197 @@
+[world]
+name = "practice-dumb-006"
+seed = 6
+version = 1
+family = "dumbbell"
+diameter = 6
+generator = 2
+
+[params]
+link_capacity_mbps = 1000
+link_latency_us = 100
+queue_capacity_bytes = 65536
+warmup_ms = 200
+duration_ms = 10000
+delivery_floor_pct = 99.9
+
+[[switch]]
+id = 0
+as_id = 0
+
+[[switch]]
+id = 1
+as_id = 0
+
+[[switch]]
+id = 2
+as_id = 0
+
+[[switch]]
+id = 3
+as_id = 0
+
+[[switch]]
+id = 4
+as_id = 0
+
+[[switch]]
+id = 5
+as_id = 0
+
+[[switch]]
+id = 6
+as_id = 0
+
+[[switch]]
+id = 7
+as_id = 0
+
+[[switch]]
+id = 8
+as_id = 0
+
+[[switch]]
+id = 9
+as_id = 0
+
+[[switch]]
+id = 10
+as_id = 0
+
+[[switch]]
+id = 11
+as_id = 0
+
+[[switch]]
+id = 12
+as_id = 0
+
+[[link]]
+a = 1
+b = 5
+
+[[link]]
+a = 12
+b = 4
+
+[[link]]
+a = 6
+b = 9
+
+[[link]]
+a = 10
+b = 8
+
+[[link]]
+a = 8
+b = 1
+
+[[link]]
+a = 9
+b = 7
+
+[[link]]
+a = 11
+b = 3
+
+[[link]]
+a = 3
+b = 0
+
+[[link]]
+a = 11
+b = 8
+
+[[link]]
+a = 4
+b = 2
+
+[[link]]
+a = 2
+b = 11
+
+[[link]]
+a = 0
+b = 10
+
+[[link]]
+a = 7
+b = 10
+
+[[link]]
+a = 5
+b = 6
+
+[[link]]
+a = 0
+b = 12
+
+[[app]]
+id = 100
+switch = 0
+prefix = "10.0.22.0/24"
+
+[[app]]
+id = 101
+switch = 1
+prefix = "10.0.58.0/24"
+
+[[app]]
+id = 102
+switch = 2
+prefix = "10.0.64.0/24"
+
+[[app]]
+id = 103
+switch = 3
+prefix = "10.0.223.0/24"
+
+[[app]]
+id = 104
+switch = 4
+prefix = "10.0.127.0/24"
+
+[[app]]
+id = 105
+switch = 5
+prefix = "10.0.241.0/24"
+
+[[app]]
+id = 106
+switch = 6
+prefix = "10.0.227.0/24"
+
+[[app]]
+id = 107
+switch = 7
+prefix = "10.0.207.0/24"
+
+[[app]]
+id = 108
+switch = 8
+prefix = "10.0.125.0/24"
+
+[[app]]
+id = 109
+switch = 9
+prefix = "10.0.169.0/24"
+
+[[app]]
+id = 110
+switch = 10
+prefix = "10.0.226.0/24"
+
+[[app]]
+id = 111
+switch = 11
+prefix = "10.0.235.0/24"
+
+[[app]]
+id = 112
+switch = 12
+prefix = "10.0.82.0/24"
+
+[workload]
+kind = "all_pairs_cbr"
+interval_ms = 10
+size_bytes = 100

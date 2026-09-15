@@ -1,0 +1,42 @@
+[schedule]
+world = "part2-grid-003"
+seed = 3
+recovery_budget_ms = 1000
+duration_ms = 23699
+generator = 2
+
+[[failure]]
+link = [3, 7]
+down_ms = 2035
+up_ms = 4400
+blast_radius = 1
+
+[[failure]]
+link = [1, 2]
+down_ms = 6000
+up_ms = 7666
+blast_radius = 4
+
+[[failure]]
+link = [1, 7]
+down_ms = 9187
+up_ms = 10749
+blast_radius = 6
+
+[[failure]]
+link = [5, 9]
+down_ms = 12510
+up_ms = 14704
+blast_radius = 1
+
+[[failure]]
+link = [1, 6]
+down_ms = 17015
+up_ms = 18647
+blast_radius = 1
+
+[[failure]]
+link = [8, 9]
+down_ms = 20397
+up_ms = 22161
+blast_radius = 4

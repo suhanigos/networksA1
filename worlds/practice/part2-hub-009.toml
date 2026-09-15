@@ -1,0 +1,127 @@
+[world]
+name = "part2-hub-009"
+seed = 9
+version = 1
+family = "hub_spoke"
+diameter = 2
+generator = 2
+
+[params]
+link_capacity_mbps = 1000
+link_latency_us = 100
+queue_capacity_bytes = 65536
+warmup_ms = 200
+duration_ms = 60000
+delivery_floor_pct = 98.0
+
+[[switch]]
+id = 0
+as_id = 0
+
+[[switch]]
+id = 1
+as_id = 0
+
+[[switch]]
+id = 2
+as_id = 0
+
+[[switch]]
+id = 3
+as_id = 0
+
+[[switch]]
+id = 4
+as_id = 0
+
+[[switch]]
+id = 5
+as_id = 0
+
+[[switch]]
+id = 6
+as_id = 0
+
+[[link]]
+a = 5
+b = 4
+
+[[link]]
+a = 0
+b = 1
+
+[[link]]
+a = 5
+b = 3
+
+[[link]]
+a = 0
+b = 3
+
+[[link]]
+a = 5
+b = 6
+
+[[link]]
+a = 5
+b = 0
+
+[[link]]
+a = 0
+b = 2
+
+[[link]]
+a = 5
+b = 2
+
+[[link]]
+a = 0
+b = 4
+
+[[link]]
+a = 5
+b = 1
+
+[[link]]
+a = 0
+b = 6
+
+[[app]]
+id = 100
+switch = 0
+prefix = "10.0.237.0/24"
+
+[[app]]
+id = 101
+switch = 1
+prefix = "10.0.45.0/24"
+
+[[app]]
+id = 102
+switch = 2
+prefix = "10.0.113.0/24"
+
+[[app]]
+id = 103
+switch = 3
+prefix = "10.0.186.0/24"
+
+[[app]]
+id = 104
+switch = 4
+prefix = "10.0.29.0/24"
+
+[[app]]
+id = 105
+switch = 5
+prefix = "10.0.169.0/24"
+
+[[app]]
+id = 106
+switch = 6
+prefix = "10.0.202.0/24"
+
+[workload]
+kind = "all_pairs_cbr"
+interval_ms = 10
+size_bytes = 100

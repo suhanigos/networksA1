@@ -1,0 +1,42 @@
+[schedule]
+world = "part2-hub-009"
+seed = 2
+recovery_budget_ms = 1000
+duration_ms = 26204
+generator = 2
+
+[[failure]]
+link = [4, 5]
+down_ms = 1569
+up_ms = 3510
+blast_radius = 1
+
+[[failure]]
+link = [0, 2]
+down_ms = 5795
+up_ms = 8286
+blast_radius = 1
+
+[[failure]]
+link = [0, 3]
+down_ms = 10365
+up_ms = 11879
+blast_radius = 1
+
+[[failure]]
+link = [0, 5]
+down_ms = 14057
+up_ms = 16497
+blast_radius = 1
+
+[[failure]]
+link = [0, 1]
+down_ms = 17997
+up_ms = 20276
+blast_radius = 1
+
+[[failure]]
+link = [0, 4]
+down_ms = 22379
+up_ms = 24272
+blast_radius = 1
