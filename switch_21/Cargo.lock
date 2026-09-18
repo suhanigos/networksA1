@@ -84,7 +84,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "switch_a1"
+name = "switch_21"
 version = "0.1.0"
 dependencies = [
  "switch_program_sdk",
